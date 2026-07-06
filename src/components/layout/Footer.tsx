@@ -27,8 +27,8 @@ export default function Footer() {
             </span>
           </span>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-sand/60">
-            {siteInfo.tagline} Outstation cabs and curated getaways, backed
-            by verified drivers and vetted travel partners.
+            {siteInfo.tagline} Outstation, round-trip and local cabs, backed
+            by verified, background-checked drivers.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export default function Footer() {
 
         <div>
           <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-sand/50">
-            Services
+            Trip Types
           </h3>
           <ul className="mt-4 flex flex-col gap-2">
             {services.map((service) => (

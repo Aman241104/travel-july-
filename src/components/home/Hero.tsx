@@ -1,10 +1,10 @@
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
-import QuickEnquiryStrip from "@/components/home/QuickEnquiryStrip";
+import BookingWidget from "@/components/home/BookingWidget";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-ink pb-28 pt-16 text-sand sm:pt-24">
+    <section className="relative overflow-hidden bg-ink pb-20 pt-16 text-sand sm:pb-24 sm:pt-24">
       <div
         aria-hidden
         className="pointer-events-none absolute -right-24 -top-24 h-[32rem] w-[32rem] rounded-full bg-ember-600/25 blur-3xl"
@@ -47,28 +47,28 @@ export default function Hero() {
       <Container className="relative">
         <div className="max-w-2xl">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-ember-400">
-            Outstation cabs &amp; curated getaways
+            Outstation cabs, booked your way
           </p>
           <h1 className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-            Every road leads somewhere worth going.
+            Your city, any city — one trusted cab away.
           </h1>
           <p className="mt-6 max-w-lg text-base leading-relaxed text-sand/70 sm:text-lg">
-            Book verified outstation cabs in minutes, or let our travel desk
-            plan the whole trip — hotels, flights and visas included. No
-            surge pricing, no guesswork, just a plan built around your dates.
+            One-way, round trip or a few hours in town — book a verified
+            outstation cab in minutes. Transparent per-km pricing, no surge,
+            no guesswork.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button href="/enquiry" variant="primary">
-              Plan My Trip
+              Book a Cab
             </Button>
             <Button href="/services" variant="outline-dark">
-              Explore Services
+              Explore Trip Types
             </Button>
           </div>
         </div>
 
-        <div className="relative z-10 mt-14 sm:-mb-24">
-          <QuickEnquiryStrip />
+        <div className="relative z-10 mt-14">
+          <BookingWidget />
         </div>
       </Container>
     </section>

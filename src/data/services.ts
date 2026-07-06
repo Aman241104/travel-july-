@@ -5,83 +5,68 @@ export type Service = {
   blurb: string;
   description: string;
   features: string[];
-  icon: "car" | "map" | "hotel" | "plane" | "passport";
+  icon: "car" | "route" | "clock" | "plane-transfer";
 };
 
 export const services: Service[] = [
   {
-    slug: "cabs",
-    title: "Outstation Cabs",
-    shortTitle: "Cabs",
-    blurb: "One-way and round-trip rides between cities, on your schedule.",
+    slug: "oneway",
+    title: "One-Way Outstation Cabs",
+    shortTitle: "One-Way",
+    blurb: "Point-to-point intercity rides — pay only for the distance you travel.",
     description:
-      "Book a comfortable, verified ride for your next intercity trip. Whether it's a quick one-way hop or a multi-day round trip, our drivers know the route and the roads.",
+      "Heading to another city and not coming straight back? Book a one-way outstation cab and pay only for a single leg — no round-trip minimum, no dead-mileage charges tacked on.",
     features: [
-      "One-way & round trips across 60+ cities",
-      "Sedans, SUVs and tempo travellers for groups",
-      "Verified, background-checked drivers",
+      "One-way fares across 50+ cities",
+      "Sedans, SUVs and tempo travellers",
+      "ID-verified, background-checked drivers",
       "Transparent per-km pricing — no surge, ever",
     ],
     icon: "car",
   },
   {
-    slug: "packages",
-    title: "Holiday Packages",
-    shortTitle: "Packages",
-    blurb: "Curated multi-day trips, planned so you don't have to.",
+    slug: "round-trip",
+    title: "Round Trip Cabs",
+    shortTitle: "Round Trip",
+    blurb: "Same cab, same driver, there and back — built for multi-day trips.",
     description:
-      "From hill-station escapes to coastal getaways, our holiday packages are built around real itineraries our team has actually travelled — not a generic template.",
+      "Planning a trip with stops along the way, or just want the same driver waiting for the return leg? Round trip bookings hold the vehicle for your full itinerary at a flat per-day rate.",
     features: [
-      "Curated 3–10 day itineraries",
-      "Hill station, beach and heritage circuits",
-      "Stays hand-vetted by our travel desk",
-      "Flexible for solo travellers, groups or private trips",
+      "Flexible multi-day and multi-city itineraries",
+      "Same driver for the entire trip",
+      "Toll, parking and driver allowance shown upfront",
+      "Free waiting time built into every quote",
     ],
-    icon: "map",
+    icon: "route",
   },
   {
-    slug: "hotels",
-    title: "Hotel Bookings",
-    shortTitle: "Hotels",
-    blurb: "500+ partner stays, from budget to boutique.",
+    slug: "local",
+    title: "Local & Hourly Rentals",
+    shortTitle: "Local",
+    blurb: "Cabs by the hour for in-city errands, events or half-day plans.",
     description:
-      "Skip the endless tab-switching. We match you with the right stay for your trip and budget, with rates checked against the market before you book.",
+      "Need a car for a few hours in town — meetings, shopping, a wedding, or shuttling between events? Book by the hour or for a fixed package (e.g. 4hr/40km, 8hr/80km) and skip the per-trip haggling.",
     features: [
-      "500+ partner hotels across India",
-      "Options from budget to luxury",
-      "Free cancellation on select stays",
-      "Best-rate match guarantee",
+      "Hourly packages from 2 to 12 hours",
+      "No minimum-distance surprises",
+      "Same-day and advance booking",
+      "Ideal for events, meetings and city touring",
     ],
-    icon: "hotel",
+    icon: "clock",
   },
   {
-    slug: "flights",
-    title: "Flight Assistance",
-    shortTitle: "Flights",
-    blurb: "Domestic and international fares, with a human backup.",
+    slug: "airport",
+    title: "Airport Transfers",
+    shortTitle: "Airport",
+    blurb: "On-time pickup and drop for flights, tracked against your actual landing time.",
     description:
-      "Search fares yourself or let us handle it — either way, you get a real support line if your flight changes, gets delayed, or needs rebooking.",
+      "Flight delays shouldn't be your problem to manage. We track your flight and adjust pickup timing automatically, so your cab is waiting whether you land early or late.",
     features: [
-      "Domestic & international fare search",
-      "24/7 rebooking support",
-      "Fare-drop alerts on request",
-      "Group booking assistance",
+      "Live flight tracking, no extra charge",
+      "Free waiting time for arrivals",
+      "Meet-and-greet with a name board on request",
+      "Fixed fares — no airport surge pricing",
     ],
-    icon: "plane",
-  },
-  {
-    slug: "visa",
-    title: "Visa Assistance",
-    shortTitle: "Visa",
-    blurb: "Document checklists and status tracking, sorted.",
-    description:
-      "Visa paperwork is the least fun part of travel planning. We help you get the checklist right the first time and keep you posted as your application moves.",
-    features: [
-      "Tourist & business visa support",
-      "Document checklist & review",
-      "Application-status tracking",
-      "Partnered agents across 40+ countries",
-    ],
-    icon: "passport",
+    icon: "plane-transfer",
   },
 ];

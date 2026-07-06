@@ -5,9 +5,9 @@ import ContactPanel from "@/components/enquiry/ContactPanel";
 import { services } from "@/data/services";
 
 export const metadata: Metadata = {
-  title: "Enquiry — Kestrel Voyages",
+  title: "Enquiry — Akshar Travels",
   description:
-    "Tell us about your trip and our travel desk will get back to you within 24 hours.",
+    "Tell us about your trip and our team will get back to you within 24 hours.",
 };
 
 type SearchParams = Promise<{
@@ -42,11 +42,11 @@ export default async function EnquiryPage({
             Enquiry
           </p>
           <h1 className="mt-4 font-display text-3xl font-semibold text-ink sm:text-4xl">
-            Let&apos;s plan your trip
+            Let&apos;s book your cab
           </h1>
           <p className="mt-4 text-stone-600">
-            Fill in a few details and our travel desk will follow up within
-            24 hours with real options — not a form-letter reply.
+            Fill in a few details and our team will follow up within 24
+            hours with a real quote — not a form-letter reply.
           </p>
         </div>
 

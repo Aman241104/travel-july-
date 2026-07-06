@@ -10,9 +10,9 @@ export default function ServiceTeasers() {
     <section className="bg-sand py-20 sm:py-24">
       <Container>
         <SectionHeading
-          eyebrow="What we do"
-          title="One team, every part of the trip"
-          description="From a same-day cab to a two-week holiday, plan it all in one place."
+          eyebrow="Trip types"
+          title="Whatever the trip, there's a fare for it"
+          description="One-way, round trip, hourly rentals or airport runs — pick what fits and book in minutes."
         />
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

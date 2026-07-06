@@ -82,8 +82,8 @@ export default function EnquiryForm({
           Thanks, {form.name.split(" ")[0]} — we&apos;ve got it.
         </h2>
         <p className="mt-2 text-sm leading-relaxed text-stone-600">
-          Your enquiry has been received. Our travel desk will reach out
-          within 24 hours on {form.phone}.
+          Your enquiry has been received. Our team will reach out within 24
+          hours on {form.phone}.
         </p>
         <button
           type="button"
@@ -140,13 +140,13 @@ export default function EnquiryForm({
       </div>
 
       <div className="grid gap-5 sm:grid-cols-2">
-        <Field label="Service Interest" error={errors.service}>
+        <Field label="Trip Type" error={errors.service}>
           <select
             value={form.service}
             onChange={(e) => update("service", e.target.value)}
             className={inputClasses(!!errors.service)}
           >
-            <option value="">Select a service</option>
+            <option value="">Select a trip type</option>
             {services.map((s) => (
               <option key={s.slug} value={s.slug}>
                 {s.title}

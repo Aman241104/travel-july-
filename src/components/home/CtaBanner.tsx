@@ -7,10 +7,10 @@ export default function CtaBanner() {
       <Container className="flex flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
         <div>
           <h2 className="font-display text-2xl font-semibold sm:text-3xl">
-            Ready for your next trip?
+            Ready to book your cab?
           </h2>
           <p className="mt-2 text-sand/85">
-            Tell us where you&apos;re headed — we&apos;ll take it from there.
+            Tell us your route and dates — we&apos;ll take it from there.
           </p>
         </div>
         <Button href="/enquiry" variant="outline-dark" className="shrink-0 border-sand text-sand hover:border-ink hover:bg-ink hover:text-sand">

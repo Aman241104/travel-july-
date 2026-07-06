@@ -3,7 +3,7 @@ import { siteInfo } from "@/data/nav";
 const trustPoints = [
   "Response within 24 hours, usually faster",
   "No spam calls — we only follow up on what you asked",
-  "Verified drivers & vetted travel partners only",
+  "ID-verified, background-checked drivers only",
 ];
 
 export default function ContactPanel() {
@@ -11,7 +11,7 @@ export default function ContactPanel() {
     <div className="rounded-2xl bg-ink p-8 text-sand">
       <h2 className="font-display text-xl font-semibold">Talk to us directly</h2>
       <p className="mt-2 text-sm text-sand/70">
-        Prefer a quicker chat? Reach the travel desk directly.
+        Prefer a quicker chat? Reach our booking desk directly.
       </p>
 
       <ul className="mt-6 flex flex-col gap-4 text-sm">

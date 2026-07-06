@@ -5,15 +5,15 @@ import Reveal from "@/components/ui/Reveal";
 const steps = [
   {
     title: "Share your trip",
-    description: "Tell us where, when, and how many — takes under a minute.",
+    description: "Pickup, drop and dates — takes under a minute.",
   },
   {
-    title: "Get matched with verified options",
-    description: "Drivers, stays or fares checked against our own standards, not just the lowest price.",
+    title: "Pick your vehicle",
+    description: "Hatchback, sedan, SUV or tempo traveller, matched to your group size.",
   },
   {
     title: "Confirm & pay your way",
-    description: "Card, UPI or pay-on-arrival for cabs — whatever's easiest for you.",
+    description: "Card, UPI or pay-on-arrival — whatever's easiest for you.",
   },
   {
     title: "24/7 support on the road",

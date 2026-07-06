@@ -5,13 +5,14 @@ export const navLinks = [
 ] as const;
 
 export const siteInfo = {
-  name: "Kestrel",
-  nameSuffix: "Voyages",
-  tagline: "Every road leads somewhere worth going.",
-  phoneDisplay: "+91 98200 11234",
-  phoneHref: "tel:+919820011234",
-  whatsappHref: "https://wa.me/919820011234",
-  email: "hello@kestrelvoyages.in",
-  city: "Pune, Maharashtra",
-  hours: "Mon–Sun, 7am – 11pm IST",
+  name: "Akshar",
+  nameSuffix: "Travels",
+  tagline: "Your city, any city — one trusted cab away.",
+  // TODO: swap in Akshar Travels' real business details before launch
+  phoneDisplay: "+91 [PHONE]",
+  phoneHref: "tel:+91[PHONE]",
+  whatsappHref: "https://wa.me/91[PHONE]",
+  email: "[EMAIL]@akshartravels.in",
+  city: "[CITY], [STATE]",
+  hours: "Mon–Sun, 24/7",
 } as const;

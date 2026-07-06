@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# claude code (local/personal, not shared project config)
+.claude/settings.local.json
+.claude/tdd-guard/

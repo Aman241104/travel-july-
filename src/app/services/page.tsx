@@ -5,9 +5,9 @@ import ServiceSection from "@/components/services/ServiceSection";
 import { services } from "@/data/services";
 
 export const metadata: Metadata = {
-  title: "Services — Kestrel Voyages",
+  title: "Trip Types — Akshar Travels",
   description:
-    "Outstation cabs, holiday packages, hotel bookings, flight assistance and visa support — all handled by one travel desk.",
+    "One-way, round trip, local rentals and airport transfers — verified drivers and transparent per-km pricing on every trip type.",
 };
 
 export default function ServicesPage() {
@@ -16,14 +16,14 @@ export default function ServicesPage() {
       <section className="bg-ink py-16 text-sand sm:py-20">
         <Container>
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-ember-400">
-            Services
+            Trip Types
           </p>
           <h1 className="mt-4 max-w-xl font-display text-3xl font-semibold sm:text-4xl">
             Everything between &ldquo;let&apos;s go&rdquo; and getting there
           </h1>
           <p className="mt-4 max-w-lg text-sand/70">
-            Book a single cab ride or hand us the whole trip. Pick a category
-            below to see what&apos;s included.
+            Pick the trip type that fits, and see exactly what&apos;s
+            included before you book.
           </p>
         </Container>
       </section>

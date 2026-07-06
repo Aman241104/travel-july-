@@ -17,9 +17,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Kestrel Voyages — Outstation Cabs & Curated Getaways",
+  title: "Akshar Travels — Outstation Cabs, Booked Your Way",
   description:
-    "Premium outstation cab bookings and curated travel — holiday packages, hotels, flights and visa assistance, backed by verified drivers and vetted partners.",
+    "Book one-way, round-trip, local and airport-transfer cabs across 50+ cities. Verified drivers, transparent per-km pricing, no surge — ever.",
 };
 
 export default function RootLayout({
