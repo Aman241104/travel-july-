@@ -66,7 +66,10 @@ export default function EnquiryForm({
 
   if (submitted) {
     return (
-      <div className="rounded-2xl border border-ember-600/20 bg-ember-600/5 p-8">
+      <div
+        role="status"
+        className="rounded-2xl border border-ember-600/20 bg-ember-600/5 p-8"
+      >
         <span className="flex h-11 w-11 items-center justify-center rounded-full bg-ember-600 text-sand">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path
@@ -109,41 +112,57 @@ export default function EnquiryForm({
 
   return (
     <form onSubmit={handleSubmit} noValidate className="grid gap-5">
-      <Field label="Full Name" error={errors.name}>
+      <Field id="name" label="Full Name" error={errors.name}>
         <input
+          id="name"
           value={form.name}
           onChange={(e) => update("name", e.target.value)}
           placeholder="Aman Patel"
+          required
+          aria-invalid={!!errors.name}
+          aria-describedby={errors.name ? "name-error" : undefined}
           className={inputClasses(!!errors.name)}
         />
       </Field>
 
       <div className="grid gap-5 sm:grid-cols-2">
-        <Field label="Phone" error={errors.phone}>
+        <Field id="phone" label="Phone" error={errors.phone}>
           <input
+            id="phone"
             value={form.phone}
             onChange={(e) => update("phone", e.target.value)}
             placeholder="98200 11234"
             inputMode="numeric"
+            required
+            aria-invalid={!!errors.phone}
+            aria-describedby={errors.phone ? "phone-error" : undefined}
             className={inputClasses(!!errors.phone)}
           />
         </Field>
-        <Field label="Email" error={errors.email}>
+        <Field id="email" label="Email" error={errors.email}>
           <input
+            id="email"
             value={form.email}
             onChange={(e) => update("email", e.target.value)}
             placeholder="you@email.com"
             type="email"
+            required
+            aria-invalid={!!errors.email}
+            aria-describedby={errors.email ? "email-error" : undefined}
             className={inputClasses(!!errors.email)}
           />
         </Field>
       </div>
 
       <div className="grid gap-5 sm:grid-cols-2">
-        <Field label="Trip Type" error={errors.service}>
+        <Field id="service" label="Trip Type" error={errors.service}>
           <select
+            id="service"
             value={form.service}
             onChange={(e) => update("service", e.target.value)}
+            required
+            aria-invalid={!!errors.service}
+            aria-describedby={errors.service ? "service-error" : undefined}
             className={inputClasses(!!errors.service)}
           >
             <option value="">Select a trip type</option>
@@ -155,19 +174,24 @@ export default function EnquiryForm({
             <option value="other">Something else</option>
           </select>
         </Field>
-        <Field label="Number of Travellers" error={errors.travellers}>
+        <Field id="travellers" label="Number of Travellers" error={errors.travellers}>
           <input
+            id="travellers"
             type="number"
             min={1}
             value={form.travellers}
             onChange={(e) => update("travellers", e.target.value)}
+            required
+            aria-invalid={!!errors.travellers}
+            aria-describedby={errors.travellers ? "travellers-error" : undefined}
             className={inputClasses(!!errors.travellers)}
           />
         </Field>
       </div>
 
-      <Field label="Preferred Travel Date">
+      <Field id="date" label="Preferred Travel Date">
         <input
+          id="date"
           type="date"
           value={form.date}
           onChange={(e) => update("date", e.target.value)}
@@ -175,8 +199,9 @@ export default function EnquiryForm({
         />
       </Field>
 
-      <Field label="Additional Details (optional)">
+      <Field id="details" label="Additional Details (optional)">
         <textarea
+          id="details"
           value={form.details}
           onChange={(e) => update("details", e.target.value)}
           rows={4}
@@ -205,19 +230,25 @@ function inputClasses(hasError: boolean) {
 }
 
 function Field({
+  id,
   label,
   error,
   children,
 }: {
+  id: string;
   label: string;
   error?: string;
   children: React.ReactNode;
 }) {
   return (
-    <label className="flex flex-col gap-1.5">
+    <label className="flex flex-col gap-1.5" htmlFor={id}>
       <span className="text-sm font-medium text-ink">{label}</span>
       {children}
-      {error && <span className="text-xs text-ember-600">{error}</span>}
+      {error && (
+        <span id={`${id}-error`} role="alert" className="text-xs text-ember-600">
+          {error}
+        </span>
+      )}
     </label>
   );
 }

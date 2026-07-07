@@ -5,7 +5,7 @@ import ContactPanel from "@/components/enquiry/ContactPanel";
 import { services } from "@/data/services";
 
 export const metadata: Metadata = {
-  title: "Enquiry — Akshar Travels",
+  title: "Enquiry",
   description:
     "Tell us about your trip and our team will get back to you within 24 hours.",
 };

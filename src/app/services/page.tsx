@@ -5,7 +5,7 @@ import ServiceSection from "@/components/services/ServiceSection";
 import { services } from "@/data/services";
 
 export const metadata: Metadata = {
-  title: "Trip Types — Akshar Travels",
+  title: "Trip Types",
   description:
     "One-way, round trip, local rentals and airport transfers — verified drivers and transparent per-km pricing on every trip type.",
 };

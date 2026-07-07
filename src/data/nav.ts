@@ -4,6 +4,9 @@ export const navLinks = [
   { href: "/enquiry", label: "Enquiry" },
 ] as const;
 
+// TODO: swap in the production domain once Akshar Travels' site is deployed
+export const siteUrl = "https://www.akshartravels.in";
+
 export const siteInfo = {
   name: "Akshar",
   nameSuffix: "Travels",
